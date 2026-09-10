@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Desafio de Matemática</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main class="container">
+    <h1>Desafio de Matemática</h1>
+    <p class="regras">
+      Resolva cada conta antes que o tempo acabe. Você tem 3 vidas e perde uma
+      a cada resposta errada ou tempo esgotado. Alcance 100 pontos para vencer.
+    </p>
+
+    <div class="tabuleiro" id="tabuleiro">
+
+      <div class="hud">
+        <span>Pontos: <strong id="pontosValue">0</strong></span>
+        <span>Vidas: <strong id="vidasValue">3</strong></span>
+        <span>Tempo: <strong id="tempoValue">10</strong>s</span>
+      </div>
+
+      <p class="pergunta" id="perguntaDisplay">0 + 0 = ?</p>
+
+      <form class="form-resposta" id="formResposta">
+        <input
+          type="number"
+          id="respostaInput"
+          class="resposta-input"
+          autocomplete="off"
+          disabled
+        />
+        <button type="submit" class="btn" id="responderBtn" disabled>Responder</button>
+      </form>
+
+      <!-- tela inicial -->
+      <div class="mensagem" id="telaInicial">
+        <p>Pronto para começar?</p>
+        <button class="btn" id="iniciarBtn">Iniciar jogo</button>
+      </div>
+
+      <!-- tela final (vitória ou derrota) -->
+      <div class="mensagem escondido" id="mensagemFinal">
+        <p id="textoFinal"></p>
+        <button class="btn" id="reiniciarBtn">Jogar novamente</button>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
