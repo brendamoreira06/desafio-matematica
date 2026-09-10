@@ -38,7 +38,7 @@ Abra o arquivo `index.html` em qualquer navegador.
 
 ## Versão publicada (GitHub Pages)
 
-> 
+> https://brendamoreira06.github.io/desafio-matematica/
 
 *(Atualize este link após publicar no GitHub Pages.)*
 
